@@ -115,11 +115,12 @@ span{
    max-width: 300px;
    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
    z-index: 1;
-   left: 28em;
-   top: 165px;
+   left: 38%;
+   top: 19%;
    border-radius: 10px ;
    border: solid #01497C;
    background-color: #012A4A;
+
  }
  /* .dropdown-content {
    display: none;
