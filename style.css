@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+*{
+   margin: 0 auto;
+   padding: 0 auto;
+   font-family: Roboto, sans-serif;
+   background-color: #01497C;
+   color: #EDDDD4;
+   font-size: 24px;
+
+}
+input{
+   border: 2px solid #012A4A;
+   border-radius: 4px;
+
+}
+input[type="number"]{
+   -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 0; 
+    background-color: #2C7DA0;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+      margin: 0; 
+}
+   
+h1{
+   text-align: center;
+   font-size: 32px;
+   padding: 18px;
+   background-color:#012A4A;
+}
+.calculadora{
+   text-align: center;
+   padding: 2px;
+}
+#text-calc{
+   margin-bottom: 8px;
+   padding: 8px;
+}
+.dropbtn{
+   width: 302px;
+   position: relative;
+   left: -2.2em;
+   border: 2px solid #012A4A;
+   border-radius: 4px;
+   margin-top: 4px;
+}
+
+
+.resultado, #result-function{
+   text-align: center;
+   justify-content: center;
+   font-size: 40px;
+   padding: 25px;
+   font-weight: bold;
+}
+
+.lista-impuestos{
+
+   padding: 8px;
+   width: 600px;
+}
+
+#total-impuestos, .impuestos-calc{ 
+   font-size: 24px;
+}
+.impuestos, li{
+   font-size: 18px;
+   list-style: none;
+}
+.lista-impuestos, .impuestos, #calc-iva, #calc-pais, #calc-pais, #calc-provincia, #calc-afip, ul, li, span{
+   font-size: 18px;  
+   background-color: #012A4A;
+   border: solid #012A4A;
+   border-radius: 5px;
+   list-style: none;
+}
+
+.impuestos{
+   font-size: 24px;
+}
+
+
+span{
+   font-size: 18px;
+   color: #468FAF;
+}
+.dolar-hoy{
+   width: 600px;
+   padding: 8px;
+   margin-top: 20px;
+}
+#dolar-hoy{
+   margin-left: 40px;
+}
+#dolar-hoy, #dolar{
+   font-size: 18px ;
+}
+
+#dolar-hoy, #dolar, .dolar-hoy, #conversion{
+   background-color: #012A4A;
+   border: solid #012A4A;
+   border-radius: 5px;
+}
+
+
+
+.dropdown-content {
+   display: none;
+   position: relative ;
+   min-width: 160px;
+   overflow: auto;
+   max-width: 300px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+   left: 28em;
+   top: 165px;
+   border-radius: 10px ;
+   border: solid #01497C;
+   background-color: #012A4A;
+ }
+ /* .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #f9f9f9;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+   left: 600px;
+ } */
+ .dropdown-content a {
+   padding: 12px 16px;
+   text-decoration: none;
+   display: flex;   
+   position: relative;
+   
+   color: #EDDDD4;
+   font-size: 18px;
+   background-color: #012A4A;
+
+ }
+ /* .dropdown-content a {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+   left: 500px;
+
+ } */
+a:hover {
+   background-color: #468FAF;
+   font-size: 24px;
+   animation: ease;
+   transition: 0.2s;
+   border-radius: 10px;
+ }
+.show {
+   display: flex;
+   position: absolute;
+   right: 7em;
+   flex-direction: column;
+}
+#result-function{
+   text-align: center;
+   justify-content: center;
+   font-size: 40px;
+   padding:10px;
+   background-color: #01497C;
+   border: none;
+   color: #EDDDD4;
+}
+
+a:hover.disclaimer{
+   background-color: #01497C;
+   animation: none;
+   font-size: 16px;
+}
+.disclaimer{
+   font-size: 14px;
+   text-align: center;
+}

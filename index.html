@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Calculadora de pagos al exterior Argentina</title>
+</head>
+<body>
+   <h1>Calculadora de impuestos Argentina</h1>
+   <div class="calculadora">
+      <p id="text-calc">Ingresa el valor que quieres cargar</p>
+      <input type="number" id="valor">
+      <input type="submit" value="Calcular" id="press" onclick="calculo()">
+      <div class="dropdown">
+         <button onclick="myFunction()" class="dropbtn" id="boton"> Elegir provincia </button>
+         <div id="myDropdown" class="dropdown-content">
+            <a href="#" id="1" onclick="caba()">Buenos Aires o CABA</a>
+            <a href="#" id="2" onclick="chaco()">Chaco</a>
+            <a href="#" id="3" onclick="cordoba()">Córdoba</a>
+            <a href="#" id="4" onclick="pampa()">La Pampa(?)</a>
+            <a href="#" id="5" onclick="neuquen()">Neuquén</a>
+            <a href="#" id="6" onclick="rio()">Rio Negro</a>
+            <a href="#" id="7" onclick="salta()">Salta</a>
+            <a href="#" id="0" onclick="ninguna()">Ninguna de las anteriores</a>
+         </div>
+      </div>
+   </div>
+   <div>
+      <p class="resultado">AR$<span id="result-function">0,00</span></p>
+   </div>
+   <div class="lista-impuestos" id="lista-impuestos">
+      <p class="impuestos"> En impuestos: <span class="impuestos-calc">AR$ <span id="total-impuestos">0,00</span></span></p>
+      <ul>
+         <li> IVA Servicios Digitales AR$ <span id="calc-iva">0,00</span><span id="impuestos-lista">(21%)</span></li>
+         <li> Percepción impuesto RG AFIP 4815 AR$ <span id="calc-afip">0,00</span><span id="impuestos-lista">(45%)</span></li>
+         <li> Ley impuesto PAIS AR$ <span id="calc-pais">0,00</span><span id="impuestos-lista">(8%)</span></li>
+         <li> Impuestos provinciales AR$ <span id="calc-provincia">0,00</span><span id="impuestos-lista">(<span id="impuesto-provincia"></span>%)</span></li>
+      </ul>
+   </div>
+   <div class="dolar-hoy">
+      <p id="conversion"> Conversión "actual"</p>
+      <p id="dolar-hoy"> USD: <span id="dolar">138.6</span></p>
+
+   </div>
+   <div>
+      <p class="disclaimer"> De momento solo funciona para cálculos en pesos argentinos.
+      <br> Diseño basado en la calculadora de Markski.
+      <br> <a target="_blank" href="https://markski.ar/calc" class="disclaimer"> Link a su calculadora</a>
+   </p>
+   </div>
+   <script src="app.js" charset="utf-8"></script>
+</body>
+</html>
