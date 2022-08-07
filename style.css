@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 *{
    margin: 0 auto;
-   padding: 0 auto;
    font-family: Roboto, sans-serif;
    background-color: #01497C;
    color: #EDDDD4;
    font-size: 24px;
+   box-sizing: border-box;
 
+}
+.container{
+   max-width: 48rem;
+   padding: 0 1rem;
 }
 input{
    border: 2px solid #012A4A;
@@ -27,22 +31,38 @@ input[type=number]::-webkit-outer-spin-button {
    
 h1{
    text-align: center;
-   font-size: 32px;
+   font-size: 1.25em;
    padding: 18px;
    background-color:#012A4A;
+   border-radius: 4px;
 }
-.calculadora{
+.container-calc{
    text-align: center;
    padding: 2px;
+   display: flex;
+   width: 85%;
+   margin: 0;
+   justify-content: center;
+   border: solid magenta 1px;
+
+}
+.num-list{
+   width: 40%;
+   margin: 2px;
+   border: solid green 1px;
+}
+.calcular{
+   margin: 0px;
 }
 #text-calc{
    margin-bottom: 8px;
    padding: 8px;
+   text-align: center;
 }
 .dropbtn{
-   width: 302px;
+   display: flex;
+   width: 12.5rem;
    position: relative;
-   left: -2.2em;
    border: 2px solid #012A4A;
    border-radius: 4px;
    margin-top: 4px;
@@ -52,26 +72,26 @@ h1{
 .resultado, #result-function{
    text-align: center;
    justify-content: center;
-   font-size: 40px;
+   font-size: 1.75em;
    padding: 25px;
    font-weight: bold;
 }
 
 .lista-impuestos{
-
    padding: 8px;
-   width: 600px;
+   width: 100%;
+   box-sizing: border-box;
 }
 
 #total-impuestos, .impuestos-calc{ 
-   font-size: 24px;
+   font-size: 1em;
 }
 .impuestos, li{
    font-size: 18px;
    list-style: none;
 }
 .lista-impuestos, .impuestos, #calc-iva, #calc-pais, #calc-pais, #calc-provincia, #calc-afip, ul, li, span{
-   font-size: 18px;  
+   font-size: 0.80rem;  
    background-color: #012A4A;
    border: solid #012A4A;
    border-radius: 5px;
@@ -88,15 +108,16 @@ span{
    color: #468FAF;
 }
 .dolar-hoy{
-   width: 600px;
-   padding: 8px;
    margin-top: 20px;
+   padding: 8px;
+   width: 100%;
+   box-sizing: border-box;
 }
 #dolar-hoy{
    margin-left: 40px;
 }
 #dolar-hoy, #dolar{
-   font-size: 18px ;
+   font-size: .8rem ;
 }
 
 #dolar-hoy, #dolar, .dolar-hoy, #conversion{
@@ -104,36 +125,30 @@ span{
    border: solid #012A4A;
    border-radius: 5px;
 }
-
-
-
 .dropdown-content {
    display: none;
    position: absolute ;
-   min-width: 160px;
+   min-width: 230px;
    max-width: 300px;
    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
    z-index: 1;
-   left: 35%;
-   top: 17.5%;
+   left: 27%;
+   top: 24.5%;
    border-radius: 10px ;
    border: solid #01497C;
    background-color: #012A4A;
 
- }
-
- .dropdown-content a {
+}
+.dropdown-content a {
    padding: 12px 16px;
    text-decoration: none;
-   display: flex;   
    position: relative;
-   
    color: #EDDDD4;
    font-size: 18px;
    background-color: #012A4A;
  }
 
-a:hover {
+a:hover a:focus {
    background-color: #468FAF;
    font-size: 24px;
    animation: ease;
@@ -164,4 +179,24 @@ a:hover.disclaimer{
 .disclaimer{
    font-size: 14px;
    text-align: center;
+}
+@media (max-width:675px){
+   .container-calc{
+      flex-direction: column;
+      width: 100%;
+   }
+   .num-list{
+      width: 90%;
+      margin: 0 auto;
+      border: solid green 1px;   
+      padding: 0.25em;
+   }
+   .calcular{
+      width: 100%;
+   }
+
+   .dropdown-content{
+      left: 37%;
+      top: 26.5%;
+   }
 }
