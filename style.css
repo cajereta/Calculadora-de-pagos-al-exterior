@@ -38,18 +38,19 @@ h1{
 }
 .container-calc{
    text-align: center;
-   padding: 2px;
+   padding: 0.1em;
    display: flex;
    width: 85%;
-   margin: 0;
+   margin: 0.1em auto;
    justify-content: center;
 }
 .num-list{
-   width: 40%;
-   margin: 2px;
+   margin: 0.1em;
+
 }
 .calcular{
    margin: 0px;
+   padding: 0.1em;
 }
 #text-calc{
    margin-bottom: 8px;
@@ -84,11 +85,10 @@ h1{
    font-size: 1em;
 }
 .impuestos, li{
-   font-size: 18px;
    list-style: none;
 }
 .lista-impuestos, .impuestos, #calc-iva, #calc-pais, #calc-pais, #calc-provincia, #calc-afip, ul, li, span{
-   font-size: 0.80rem;  
+   font-size: 0.75rem;  
    background-color: #012A4A;
    border: solid #012A4A;
    border-radius: 5px;
@@ -174,6 +174,7 @@ a:hover.disclaimer{
    font-size: 16px;
 }
 .disclaimer{
+   margin-top: 2em;
    font-size: 14px;
    text-align: center;
 }
@@ -183,9 +184,8 @@ a:hover.disclaimer{
       width: 100%;
    }
    .num-list{
-      width: 90%;
       margin: 0 auto;
-      padding: 0.25em;
+      padding-bottom: 0.25em;
    }
    .calcular{
       width: 100%;
